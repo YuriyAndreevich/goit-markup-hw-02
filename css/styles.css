@@ -66,7 +66,8 @@ button {
 .list-contacts .link {
   color: var(--secondary-color);
 }
-.link-active {
+.link-active,
+.button-active {
   color: var(--accent-color);
   text-decoration: none;
 }
