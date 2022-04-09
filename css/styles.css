@@ -16,8 +16,6 @@ body {
   color: var(--main-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 .hero,
 .footer {
@@ -30,18 +28,14 @@ body {
   text-align: center;
 }
 .link {
+  font-weight: 500;
   color: var(--main-color);
   text-decoration: none;
 }
 .item {
   list-style-type: none;
 }
-button {
-  font-family: inherit;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-} /* Логотип */
+/* Логотип */
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -66,9 +60,14 @@ button {
 .list-contacts .link {
   color: var(--secondary-color);
 }
-.link-active,
-.button-active {
+.link-active {
+  font-weight: 500;
   color: var(--accent-color);
+  text-decoration: none;
+}
+.button-active {
+  background-color: var(--bg-accent-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 .list-nav .link:hover,
@@ -87,11 +86,24 @@ button {
   text-transform: uppercase;
 }
 .title-features {
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 1.14;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
-.title.section,
+.item-features {
+  background-color: var(--bg-main-color);
+  list-style-type: none;
+}
+.speciality {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+.title-section {
+  font-size: 0%;
+}
 .title-team,
 .title-activity {
   font-size: 36px;
@@ -113,34 +125,45 @@ button {
   text-transform: uppercase;
 }
 /* button */
-.hero .button {
-  background-color: var(--bg-accent-color);
-  color: var(--white-color);
+.button-studio {
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.88;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--bg-accent-color);
   letter-spacing: 0.06em;
 }
-.hero .button:hover,
-.hero .button:focus {
-  background-color: var(--bg-accent-button-color);
+.button-studio:hover,
+.button-studio:focus {
+  background-color: var(--bg-accent-color-button);
+  color: var(--white-color);
 }
-.filter .button {
-  background: var(--bg-light-color);
+.button-portfolio {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: var(--bg-light-color);
   letter-spacing: 0.03em;
 }
-.filter .button:hover,
-.filter .button:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
   background-color: var(--bg-accent-color);
   color: var(--white-color);
 }
-
-.studio .text,
+.text-features,
 .portfolio .text {
+  font-weight: 400;
   color: var(--secondary-color);
+  letter-spacing: 0.03em;
 }
-.address.link {
+.address-link {
   color: var(--white-alfa-color);
   font-style: normal;
   font-weight: 400;
@@ -148,6 +171,13 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.link.first {
+.address-link-first {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--white-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--bg-accent-color);
 }
